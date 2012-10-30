@@ -36,6 +36,7 @@
 "    -> Spell checking
 "    -> Misc
 "    -> Helper functions
+"    -> Fold
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -406,3 +407,10 @@ function! <SID>BufcloseCloseIt()
      execute("bdelete! ".l:currentBufNum)
    endif
 endfunction
+
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Fold
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set fdm=syntax
