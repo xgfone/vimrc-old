@@ -37,6 +37,7 @@
 "    -> Misc
 "    -> Helper functions
 "    -> Fold
+"    -> Menu
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -414,3 +415,8 @@ endfunction
 " => Fold
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set fdm=syntax
+
+set langmenu=zh_CN
+let $LANG='zh_CN.UTF-8'
+source $VIMRUNTIME/delmenu.vim
+source $VIMRUNTIME/menu.vim
