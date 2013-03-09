@@ -15,15 +15,15 @@ The basic version is basically just one file and no plugins. You can check out [
 
 This is useful to install on remote servers where you don't need many plugins and you don't do many edits.
 
-	git clone git://github.com/xgfone/vimrc.git ~/.vim_runtime
-	sh ~/.vim_runtime/install_basic_vimrc.sh
+	git clone git://github.com/xgfone/vimrc.git ~/.vim
+	sh ~/.vim/install_basic_vimrc.sh
 
 
 ## How to install the Awesome version?
 The awesome version includes a lot of great plugins, configurations and color schemes that make Vim a lot better. To install it simply do following:
 
-	git clone git://github.com/xgfone/vimrc.git ~/.vim_runtime
-	sh ~/.vim_runtime/install_awesome_vimrc.sh
+	git clone git://github.com/xgfone/vimrc.git ~/.vim
+	sh ~/.vim/install_awesome_vimrc.sh
 
 
 ## How to install on Windows?
@@ -35,7 +35,7 @@ Use [msysgit](http://msysgit.github.com/) to checkout the repository and run the
 
 Simply just do a git rebase!
 
-    cd ~/.vim_runtime
+    cd ~/.vim
     git pull --rebase
 
 
@@ -89,15 +89,15 @@ I recommend reading the docs of these plugins to understand them better. Each of
 
 ## How to include your own stuff?
 
-After you have installed the setup you can create **~/.vim_runtime/my_configs.vim** to fill in any configurations that are important for you. For instance, my **my_configs.vim** looks like this:
+After you have installed the setup you can create **~/.vim/my_configs.vim** to fill in any configurations that are important for you. For instance, my **my_configs.vim** looks like this:
 
-	~/.vim_runtime (master)> cat my_configs.vim
+	~/.vim (master)> cat my_configs.vim
 	map <leader>ct :cd ~/Desktop/Todoist/todoist<cr>
 	map <leader>cw :cd ~/Desktop/Wedoist/wedoist<cr> 
 
 You can also install your own plugins, for instance, via pathogen we can install [vim-rails](https://github.com/tpope/vim-rails):
 
-	cd ~/.vim_runtime
+	cd ~/.vim
 	git clone git://github.com/tpope/vim-rails.git sources_plugins/vim-rails
 	
 Now you have vim-rails installed ;-)
