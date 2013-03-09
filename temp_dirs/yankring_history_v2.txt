@@ -1,5 +1,6 @@
-https://github.com/vim-scripts/vimwiki.git,v
 ,V
+bundle/c.vim (untracked content),v
+https://github.com/vim-scripts/vimwiki.git,v
 https://github.com/vim-scripts/SuperTab.git,v
 new-omni-completion,v
 格式化全文： gg=G自动缩进当前行： ==,V
