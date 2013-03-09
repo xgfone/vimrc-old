@@ -45,6 +45,9 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Sets nocompatible with VI
+set nocompatible
+
 " Sets how many lines of history VIM has to remember
 set history=700
 
@@ -131,10 +134,11 @@ set foldcolumn=1
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable syntax highlighting
-syntax enable 
+"syntax enable 
+syntax on
 
 try
-    colorscheme desert
+    colorscheme peaksea 
 catch
 endtry
 
