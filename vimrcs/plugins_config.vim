@@ -1,6 +1,6 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Important: 
-"       This requries that you install https://github.com/xgfone/vimrc !
+"       This requries that you install https://github.com/amix/vimrc !
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -8,9 +8,9 @@
 """"""""""""""""""""""""""""""
 " => Load pathogen paths
 """"""""""""""""""""""""""""""
-call pathogen#infect()
+call pathogen#infect('~/.vim_runtime/sources_forked')
+call pathogen#infect('~/.vim_runtime/sources_non_forked')
 call pathogen#helptags()
-
 
 """"""""""""""""""""""""""""""
 " => bufExplorer plugin
@@ -20,12 +20,6 @@ let g:bufExplorerShowRelativePath=1
 let g:bufExplorerFindActive=1
 let g:bufExplorerSortBy='name'
 map <leader>o :BufExplorer<cr>
-
-
-""""""""""""""""""""""""""""""
-" => pydiction plugin
-""""""""""""""""""""""""""""""
-let g:pydiction_location = '~/.vim/bundle/pydiction/complete-dict'
 
 
 """"""""""""""""""""""""""""""
@@ -41,29 +35,8 @@ map <leader>f :MRU<CR>
 if has("win16") || has("win32")
     " Don't do anything
 else
-    let g:yankring_history_dir = '~/.vim/temp_dirs/'
+    let g:yankring_history_dir = '~/.vim_runtime/temp_dirs/'
 endif
-
-
-""""""""""""""""""""""""""""""
-" => SuperTab plugin
-""""""""""""""""""""""""""""""
-let g:SuperTabRetainCompletionType=2
-let g:SuperTabDefaultCompletionType="<C-X><C-O>"
-
-
-""""""""""""""""""""""""""""""
-" => TagList plugin
-""""""""""""""""""""""""""""""
-let Tlist_Show_One_File=1
-let Tlist_Exit_OnlyWindow=1
-
-
-""""""""""""""""""""""""""""""
-" => WinManager plugin
-""""""""""""""""""""""""""""""
-let g:winManagerWindowLayout='FileExplorer|TagList'
-nmap wm :WMToggle<cr>
 
 
 """"""""""""""""""""""""""""""
